@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+       <lib.common.widget.HeadLayout
+           android:id="@+id/hl_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:title_tv1_text="图像详情"
+           />
+       <ImageView
+           android:id="@+id/img"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           />
+</LinearLayout>

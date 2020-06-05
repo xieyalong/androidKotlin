@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="c_0083D1"> #0083D1</color>
+    <color name="c_5296da">#5296da</color>
+    <color name="c_6BAEF3">#6BAEF3</color>
+    <color name="c_FFFFFF">#FFFFFF</color>
+    <color name="c_6D6D6D">#6D6D6D</color>
+    <color name="c_c1">#C1C1C1</color>
+    <color name="c_7D">#7D7D7D</color>
+    <!--字体 主标题颜色-->
+    <color name="c_3">#333333</color>
+    <!--字体 灰色-->
+    <color name="c_AB">#ABABAB</color>
+    <!--字体 灰色-->
+    <color name="c_A7">#A7A7A7</color>
+    <!--字体左边标题-->
+    <color name="c_7C">#7C7C7C</color>
+    <color name="c_7A">#A7A7A7</color>
+    <!--字体 -->
+    <color name="c_5295DA">#5295DA</color>
+    <!--文字 灰色-->
+    <color name="c_6E">#6E6E6E</color>
+    <!--文字 灰色-->
+    <color name="c_9">#999999</color>
+    <!--文字 灰色-->
+    <color name="c_39">#393939</color>
+
+
+    <!--题颜色-->
+    <color name="c_5C">#5C5C5C</color>
+    <!--背景灰色 -->
+    <color name="c_F7">#F7F7F7</color>
+    <!--背景-->
+    <color name="c_3684D5">#3684D5</color>
+    <!--标题栏背景灰色 -->
+    <color name="c_F7F7F6">#F7F7F6</color>
+    <!--分割线-->
+    <color name="c_F1">#F1F1F1</color>
+    <color name="c_FF6C6C">#FF6C6C</color>
+    <color name="c_CF">#CFCFCF</color>
+
+</resources>

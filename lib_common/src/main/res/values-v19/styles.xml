@@ -1,0 +1,37 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <!--<style name="NotitleTheme" parent="Theme.AppCompat.NoActionBar">-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.Notitle_FullScreen" parent="AppTheme1">-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="windowActionBar">false</item>-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+    <!-- <item name="android:windowTranslucentNavigation">true</item>-->
+
+    <style name="AppTheme.TranslucentStatus" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"/>
+    <com.wakehao.bar.BottomNavigationBar
+        android:id="@+id/bar"
+        app:switchMode="still"
+        app:menu="@menu/menu"
+        app:selectedColor="#555555"
+        app:unSelectedColor="#C5C0B9"
+        app:fragmentContainerId="@id/fl_container"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>
