@@ -24,8 +24,10 @@ class RegisterActivity : BaseActivity() {
     }
 
     override  fun initViews() {
+        tv_pwd?.setText("");
+        tv_pwd!!.setText("")
         tv_login.setOnClickListener(this)
-        tv_pwd!!.transformationMethod = PasswordTransformationMethod.getInstance()
+        tv_pwd?.transformationMethod = PasswordTransformationMethod.getInstance()
         tv_pwd2!!.transformationMethod = PasswordTransformationMethod.getInstance()
     }
 
