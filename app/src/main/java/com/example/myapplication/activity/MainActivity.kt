@@ -2,6 +2,7 @@ package com.example.myapplication.activity
 
 import android.content.Context
 import android.content.Intent
+import com.blankj.utilcode.util.ActivityUtils
 import com.example.myapplication.R
 import com.wakehao.bar.BottomNavigationBar
 import com.wakehao.bar.BottomNavigationItemWithDot
@@ -15,7 +16,9 @@ class MainActivity : BaseActivity() {
         fun  startActivity(context:Context){
             var intent=Intent(context,MainActivity::class.java)
             intent.putExtra("a","A")
-            context.startActivity(intent);
+//            context.startActivity(intent);
+//            ActivityUtils.startActivity(intent)
+            ActivityUtils.startActivity(MainActivity::class.java)
         }
     }
 
