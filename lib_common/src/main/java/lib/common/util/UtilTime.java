@@ -13,11 +13,11 @@ import java.util.Locale;
  * 时间管理 日期管理
  */
 
-public class CUTime {
-    private  static CUTime instance;
-    public static CUTime i(){
+public class UtilTime {
+    private  static UtilTime instance;
+    public static UtilTime i(){
         if (null==instance){
-            instance=new CUTime();
+            instance=new UtilTime();
         }
         return  instance;
     }

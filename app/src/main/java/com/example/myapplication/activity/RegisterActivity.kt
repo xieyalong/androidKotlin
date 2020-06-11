@@ -1,10 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.text.TextUtils
 import android.text.method.PasswordTransformationMethod
 import android.view.View
 import android.widget.EditText
 import com.alibaba.fastjson.JSONObject
+import com.example.myapplication.R
 import kotlinx.android.synthetic.main.activity_register.*
 import lib.common.CStaticKey
 import lib.common.activity.BaseActivity

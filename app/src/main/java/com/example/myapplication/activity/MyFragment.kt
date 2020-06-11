@@ -1,15 +1,14 @@
-package com.example.myapplication
+package com.example.myapplication.activity
 
 import android.os.Bundle
 import android.view.View
-import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.BaseViewHolder
+import com.example.myapplication.R
 import lib.common.fragment.BaseFragment
 
-class HomeFragment : BaseFragment() {
+class MyFragment : BaseFragment() {
     companion object{
-        fun newInstance(str:String): HomeFragment {
-            var fragment = HomeFragment()
+        fun newInstance(str:String): MyFragment {
+            var fragment = MyFragment()
             var bundle = Bundle()
             bundle.putString("k", str)
             fragment.arguments = bundle
@@ -17,9 +16,10 @@ class HomeFragment : BaseFragment() {
         }
     }
     override fun initViews(mView: View?) {
+        print("")
     }
 
     override fun setPageView(): Int {
-        return R.layout.fragment_home
+        return R.layout.fragment_my
     }
 }

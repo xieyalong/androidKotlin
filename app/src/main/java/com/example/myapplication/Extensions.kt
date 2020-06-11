@@ -1,6 +1,10 @@
 package com.example.myapplication
 
 fun main(args: Array<String>) {
+    var str="aa".repeat(1);
+    println(str)
+
+
     println("Hello".addDot(3))
     3.printMe()
     4.printMe()
