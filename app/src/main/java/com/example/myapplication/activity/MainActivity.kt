@@ -18,6 +18,7 @@ class MainActivity : BaseActivity() {
     companion object{
         fun  startActivity(context:Context){
             var intent=Intent(context,MainActivity::class.java)
+//            MainActivity.javaClass
             var  user=User();
             user.address="北京"
             user.age=9
@@ -73,6 +74,17 @@ class MainActivity : BaseActivity() {
             }
 
         })
+    }
+    fun b(){
+        var aa=1
+        var b=""
+        //实体类
+        var user=User()
+        a(user)
+    }
+
+    fun a(any: Any){
+
     }
 
 }
