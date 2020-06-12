@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 
 import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -44,14 +45,22 @@ public abstract class BaseFragment extends Fragment implements ISupportFragment,
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mView = inflater.inflate(setPageView(), container, false);
+//        setHeadLayout(R.id.hl_layout);
+//        initViewDataBefore();
+//        initViews(mView);
+//        initViewDataAfter();
+        return mView;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         setHeadLayout(R.id.hl_layout);
         initViewDataBefore();
         initViews(mView);
         initViewDataAfter();
-//        动态改动 当前Fragment的动画
-//        setFragmentAnimator(fragmentAnimator);
-        return mView;
     }
+
     public  void initViewDataBefore(){}
     public  void initViewDataAfter(){}
     public  HeadLayout getHeadLayout(){
