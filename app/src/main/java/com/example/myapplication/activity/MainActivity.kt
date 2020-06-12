@@ -2,8 +2,11 @@ package com.example.myapplication.activity
 
 import android.content.Context
 import android.content.Intent
+import com.alibaba.fastjson.JSON
 import com.blankj.utilcode.util.ActivityUtils
+import com.blankj.utilcode.util.LogUtils
 import com.example.myapplication.R
+import com.example.myapplication.bean.User
 import com.wakehao.bar.BottomNavigationBar
 import com.wakehao.bar.BottomNavigationItemWithDot
 import kotlinx.android.synthetic.main.activity_main.*
@@ -15,15 +18,29 @@ class MainActivity : BaseActivity() {
     companion object{
         fun  startActivity(context:Context){
             var intent=Intent(context,MainActivity::class.java)
+            var  user=User();
+            user.address="北京"
+            user.age=9
+            user.name="lisi"
             intent.putExtra("a","A")
+            intent.putExtra("user",user)
 //            context.startActivity(intent);
-//            ActivityUtils.startActivity(intent)
-            ActivityUtils.startActivity(MainActivity::class.java)
+            ActivityUtils.startActivity(intent)
+//            ActivityUtils.startActivity(MainActivity::class.java)
         }
     }
 
     var positionTag=0;
     var mFragments= arrayListOf<BaseFragment>();
+
+    var  a="";
+    override fun initViewDataAfter() {
+        super.initViewDataAfter()
+        a=intent.getStringExtra("a")
+        LogUtils.i(">]="+a)
+        var user=intent.getSerializableExtra("user")
+        LogUtils.i(">]"+JSON.toJSONString(user))
+    }
     override fun setPageView(): Int {
       return R.layout.activity_main;
     }
