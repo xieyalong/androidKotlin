@@ -84,7 +84,8 @@ dependencies {
 //    }
     api("com.squareup.okhttp3:okhttp:4.7.2")
     //权限管理
-    api 'com.yanzhenjie:permission:1.1.2@aar'
+//    api 'com.yanzhenjie:permission:1.1.2@aar'
+    api 'com.yanzhenjie:permission:2.0.3'
     //通信
     api 'org.greenrobot:eventbus:3.2.0'
     //commonid
