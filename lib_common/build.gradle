@@ -107,6 +107,19 @@ dependencies {
     //base64和图片
     api files('libs\\sun.misc.BASE64Decoder.jar')
     api 'com.github.yilylong:CBDialog:v1.0.7'
+
+    //基础工具库
+    api 'com.github.tamsiree.RxTool:RxKit:2.6.2'
+    //UI库
+    api 'com.github.tamsiree.RxTool:RxUI:2.6.2'
+    //相机库
+    api 'com.github.tamsiree.RxTool:RxCamera:2.6.2'
+    //功能库（Zxing扫描与生成二维码条形码）
+    api 'com.github.tamsiree.RxTool:RxFeature:2.6.2'
+    //ArcGis For Android工具库（API：100.1以上版本）
+    api 'com.github.tamsiree.RxTool:RxArcGisKit:2.6.2'
+    //支付模块(支付宝 微信)[暂为待优化模块，谨慎]
+    api 'com.github.tamsiree.RxTool:RxPay:2.6.2'
 }
 configurations {
     cleanedAnnotations

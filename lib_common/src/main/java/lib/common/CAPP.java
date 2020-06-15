@@ -5,6 +5,7 @@ import android.app.Application;
 import android.os.Bundle;
 
 import com.blankj.utilcode.util.Utils;
+import com.tamsiree.rxkit.RxTool;
 
 import lib.common.util.SSLHandshake;
 
@@ -28,6 +29,7 @@ public class CAPP  implements Application.ActivityLifecycleCallbacks{
         Utils.init(application);
         application.registerActivityLifecycleCallbacks(this);
         new SSLHandshake().handleSSLHandshake();
+        RxTool.init(application);
     }
 
     public Application getApplication() {
